@@ -1,0 +1,27 @@
+{
+    "name": "project_3_morse-code-translator",
+    "version": "1.0.0",
+    "description": "This is a project whereby students were required to create a morse-code translator which could take in either English text or morse code (represented by a series of fullstops and hyphens) and convert it into morse code or English respectively.",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/avvisingh/Project_3_Morse-Code-Translator.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/avvisingh/Project_3_Morse-Code-Translator/issues"
+    },
+    "homepage": "https://github.com/avvisingh/Project_3_Morse-Code-Translator#readme",
+    "devDependencies": {
+        "@types/jest": "^26.0.20",
+        "@babel/core": "^7.12.10",
+        "@babel/preset-env": "^7.12.11",
+        "babel-jest": "^26.6.3",
+        "jest": "^27.4.3"
+    }
+}
