@@ -1,0 +1,1 @@
+This is a project whereby students were required to create a morse-code translator which could take in either English text or morse code (represented by a series of fullstops and hyphens) and convert it into morse code or English respectively.
