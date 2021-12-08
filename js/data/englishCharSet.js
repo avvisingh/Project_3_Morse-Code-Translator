@@ -37,6 +37,7 @@ const englishCharSet = [
     "9",
     ",",
     "?",
+    " ",
 ];
 
 export default englishCharSet;

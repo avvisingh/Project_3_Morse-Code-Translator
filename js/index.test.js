@@ -7,7 +7,12 @@ import morseCharSet from "./data/morseCharSet";
 import { englishToMorse } from ".";
 
 describe("Tests for englishToMorse()", () => {
-    it("Should correctly convert sentences containing only lowercase letters", () => {
+    it("Should correctly convert single words", () => {
+        expect(englishToMorse("holiday", englishCharSet, morseCharSet)).toBe(
+            ".... --- .-.. .. -.. .- -.--"
+        );
+    });
+    it("Should correctly convert sentences containing spaces and lowercase letters only", () => {
         expect(
             englishToMorse("hello how are you", englishCharSet, morseCharSet)
         ).toBe(".... . .-.. .-.. --- / .... --- .-- / .- .-. . / -.-- --- ..-");
@@ -23,11 +28,27 @@ describe("Tests for englishToMorse()", () => {
             englishToMorse("ThIs Is A tEsT", englishCharSet, morseCharSet)
         ).toBe("- .... .. ... / .. ... / .- / - . ... -");
     });
+    it("Should correctly convert sentences containing permitted puncutation", () => {
+        expect(
+            englishToMorse("Hello, how are you?", englishCharSet, morseCharSet)
+        ).toBe(
+            ".... . .-.. .-.. --- --..-- / .... --- .-- / .- .-. . / -.-- --- ..- ..--.."
+        );
+    });
     it("Should correctly convert sentences containing numbers", () => {
         expect(
             englishToMorse("my number is 1234x", englishCharSet, morseCharSet)
         ).toBe(
             "-- -.-- / -. ..- -- -... . .-. / .. ... / .---- ..--- ...-- ....- -..-"
         );
+    });
+    it("Should ignore special characters which are not described in the charset", () => {
+        expect(
+            englishToMorse(
+                "hel*&lo ho$w are you%",
+                englishCharSet,
+                morseCharSet
+            )
+        ).toBe(".... . .-.. .-.. --- / .... --- .-- / .- .-. . / -.-- --- ..-");
     });
 });
