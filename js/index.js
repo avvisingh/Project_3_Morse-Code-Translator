@@ -5,13 +5,13 @@ let englishToMorse = (str, engArr, mcArr) => {
     let charArr = str.toLowerCase().split("");
     let returnArr = charArr.map((char) => {
         if (char === " ") {
-            return " / ";
+            return "/";
         }
         return mcArr[engArr.indexOf(char)];
     });
     return returnArr.join(" ");
 };
 
-console.log(
-    englishToMorse("Hello, my name is Avvi", englishCharSet, morseCharSet)
-);
+console.log(englishToMorse("@", englishCharSet, morseCharSet));
+
+export { englishToMorse };
