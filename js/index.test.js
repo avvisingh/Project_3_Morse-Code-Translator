@@ -23,4 +23,11 @@ describe("Tests for englishToMorse()", () => {
             englishToMorse("ThIs Is A tEsT", englishCharSet, morseCharSet)
         ).toBe("- .... .. ... / .. ... / .- / - . ... -");
     });
+    it("Should correctly convert sentences containing numbers", () => {
+        expect(
+            englishToMorse("my number is 1234x", englishCharSet, morseCharSet)
+        ).toBe(
+            "-- -.-- / -. ..- -- -... . .-. / .. ... / .---- ..--- ...-- ....- -..-"
+        );
+    });
 });
