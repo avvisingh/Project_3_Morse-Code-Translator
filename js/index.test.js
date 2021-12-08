@@ -15,4 +15,12 @@ describe("Tests for englishToMorse()", () => {
             englishToMorse("this is a test", englishCharSet, morseCharSet)
         ).toBe("- .... .. ... / .. ... / .- / - . ... -");
     });
+    it("Should provide the same output with uppercase letters", () => {
+        expect(
+            englishToMorse("HELLO HOW ARE YOU", englishCharSet, morseCharSet)
+        ).toBe(".... . .-.. .-.. --- / .... --- .-- / .- .-. . / -.-- --- ..-");
+        expect(
+            englishToMorse("ThIs Is A tEsT", englishCharSet, morseCharSet)
+        ).toBe("- .... .. ... / .. ... / .- / - . ... -");
+    });
 });
