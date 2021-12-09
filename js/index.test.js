@@ -63,4 +63,20 @@ describe("Tests for morseToEnglish()", () => {
             )
         ).toBe("holiday");
     });
+    it("Should correctly convert sentences containing spaces", () => {
+        expect(
+            morseToEnglish(
+                ".... . .-.. .-.. --- / .... --- .-- / .- .-. . / -.-- --- ..-",
+                morseCharSet,
+                englishCharSet
+            )
+        ).toBe("hello how are you");
+        expect(
+            morseToEnglish(
+                "- .... .. ... / .. ... / .- / - . ... -",
+                morseCharSet,
+                englishCharSet
+            )
+        ).toBe("this is a test");
+    });
 });
