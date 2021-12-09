@@ -6,7 +6,7 @@ import englishCharSet from "./data/englishCharSet";
 import morseCharSet from "./data/morseCharSet";
 import { englishToMorse, morseToEnglish } from ".";
 
-xdescribe("Tests for englishToMorse()", () => {
+describe("Tests for englishToMorse()", () => {
     it("Should correctly convert single words", () => {
         expect(englishToMorse("holiday", englishCharSet, morseCharSet)).toBe(
             ".... --- .-.. .. -.. .- -.--"
