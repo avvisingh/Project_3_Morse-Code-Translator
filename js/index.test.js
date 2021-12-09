@@ -79,4 +79,13 @@ describe("Tests for morseToEnglish()", () => {
             )
         ).toBe("this is a test");
     });
+    it("Should correctly convert sentences containing permitted punctuation", () => {
+        expect(
+            morseToEnglish(
+                ".... . .-.. .-.. --- --..-- / .... --- .-- / .- .-. . / -.-- --- ..- ..--..",
+                morseCharSet,
+                englishCharSet
+            )
+        ).toBe("hello, how are you?");
+    });
 });
