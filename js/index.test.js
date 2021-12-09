@@ -97,4 +97,13 @@ describe("Tests for morseToEnglish()", () => {
             )
         ).toBe("my number is 1234x");
     });
+    it("Should ignore special characters which are not described in the charset", () => {
+        expect(
+            morseToEnglish(
+                ".... .-rr . .-.. .-.. --- / .... t7.. --- .-- / .- .-. . / -.-- --- ..-",
+                morseCharSet,
+                englishCharSet
+            )
+        ).toBe("hello how are you");
+    });
 });
