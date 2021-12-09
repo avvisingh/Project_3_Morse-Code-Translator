@@ -8,11 +8,17 @@ import morseCharSet from "./data/morseCharSet.js";
 let englishToMorse = (str, engArr, mcArr) => {
     let charArr = str.toLowerCase().split("");
     let returnArr = charArr
-        .filter((char) => englishCharSet.includes(char))
-        .map((char) => {
-            return mcArr[engArr.indexOf(char)];
-        });
+        .filter((char) => engArr.includes(char))
+        .map((char) => mcArr[engArr.indexOf(char)]);
     return returnArr.join(" ");
 };
 
-export { englishToMorse };
+let morseToEnglish = (str, mcArr, engArr) => {
+    let charArr = str.toLowerCase().split(" ");
+    let returnArr = charArr
+        .filter((char) => mcArr.includes(char))
+        .map((char) => engArr[charArr.indexOf(char)]);
+    return returnArr.join("");
+};
+
+export { englishToMorse, morseToEnglish };
