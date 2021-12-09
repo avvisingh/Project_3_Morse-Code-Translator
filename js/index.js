@@ -17,7 +17,7 @@ let morseToEnglish = (str, mcArr, engArr) => {
     let charArr = str.toLowerCase().split(" ");
     let returnArr = charArr
         .filter((char) => mcArr.includes(char))
-        .map((char) => engArr[charArr.indexOf(char)]);
+        .map((char) => engArr[mcArr.indexOf(char)]);
     return returnArr.join("");
 };
 

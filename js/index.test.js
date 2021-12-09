@@ -4,9 +4,9 @@
 //function should return error message if character entered is not in charSet
 import englishCharSet from "./data/englishCharSet";
 import morseCharSet from "./data/morseCharSet";
-import { englishToMorse } from ".";
+import { englishToMorse, morseToEnglish } from ".";
 
-describe("Tests for englishToMorse()", () => {
+xdescribe("Tests for englishToMorse()", () => {
     it("Should correctly convert single words", () => {
         expect(englishToMorse("holiday", englishCharSet, morseCharSet)).toBe(
             ".... --- .-.. .. -.. .- -.--"
@@ -50,5 +50,17 @@ describe("Tests for englishToMorse()", () => {
                 morseCharSet
             )
         ).toBe(".... . .-.. .-.. --- / .... --- .-- / .- .-. . / -.-- --- ..-");
+    });
+});
+
+describe("Tests for morseToEnglish()", () => {
+    it("Should correctly convert single words", () => {
+        expect(
+            morseToEnglish(
+                ".... --- .-.. .. -.. .- -.--",
+                morseCharSet,
+                englishCharSet
+            )
+        ).toBe("holiday");
     });
 });
