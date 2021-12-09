@@ -88,4 +88,13 @@ describe("Tests for morseToEnglish()", () => {
             )
         ).toBe("hello, how are you?");
     });
+    it("Should correctly convert sentences containing numbers", () => {
+        expect(
+            morseToEnglish(
+                "-- -.-- / -. ..- -- -... . .-. / .. ... / .---- ..--- ...-- ....- -..-",
+                morseCharSet,
+                englishCharSet
+            )
+        ).toBe("my number is 1234x");
+    });
 });
