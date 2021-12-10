@@ -1,0 +1,17 @@
+@use "../partials/layout";
+@use "../partials/palette";
+@use "../partials/typography";
+
+.heading {
+    &-container {
+        text-align: center;
+    }
+
+    &-h1 {
+        @include typography.heading-font(xx-large);
+    }
+
+    &-h3 {
+        @include typography.heading-font(x-large);
+    }
+}

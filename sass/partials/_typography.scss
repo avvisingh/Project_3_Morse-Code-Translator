@@ -4,11 +4,11 @@
 $heading-font: "Corben", cursive;
 $textarea-font: "Source Code Pro", monospace;
 
-@mixin heading-font {
+@mixin heading-font($font-size) {
     text-align: center;
     font-family: $heading-font;
     font-weight: 400;
-    font-size: xx-large;
+    font-size: $font-size;
     color: palette.$heading-text-colour;
 }
 
