@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Corben&family=Source+Code+Pro:wght@300&display=swap");
+@use "./palette";
+
+$heading-font: "Corben", cursive;
+$textarea-font: "Source Code Pro", monospace;
+
+@mixin heading-font {
+    text-align: center;
+    font-family: $heading-font;
+    font-weight: 400;
+    font-size: xx-large;
+    color: palette.$heading-text-colour;
+}
+
+@mixin textarea-font {
+    text-align: center;
+    font-family: $textarea-font;
+    font-weight: 300;
+    font-size: large;
+    color: palette.$textarea-text-colour;
+}
