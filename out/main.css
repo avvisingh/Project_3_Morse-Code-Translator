@@ -45,6 +45,13 @@ body {
   border: 2px solid #665352;
   border-radius: 20px;
 }
+.main-english-container-heading {
+  text-align: center;
+  font-family: "Corben", cursive;
+  font-weight: 550;
+  font-size: large;
+  color: #665352;
+}
 .main-morse-container {
   text-align: center;
 }
@@ -58,6 +65,13 @@ body {
   resize: none;
   border: 2px solid #665352;
   border-radius: 20px;
+}
+.main-morse-container-heading {
+  text-align: center;
+  font-family: "Corben", cursive;
+  font-weight: 550;
+  font-size: large;
+  color: #665352;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -26,6 +26,10 @@ body {
                 palette.$heading-text-colour
             );
         }
+
+        &-heading {
+            @include typography.heading-font(large);
+        }
     }
 
     &-morse-container {
@@ -40,6 +44,10 @@ body {
                 solid,
                 palette.$heading-text-colour
             );
+        }
+
+        &-heading {
+            @include typography.heading-font(large);
         }
     }
 }
