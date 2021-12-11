@@ -8,16 +8,20 @@
 .heading-h1 {
   text-align: center;
   font-family: "Corben", cursive;
-  font-weight: 400;
+  font-weight: 550;
   font-size: xx-large;
   color: #665352;
 }
 .heading-h3 {
   text-align: center;
   font-family: "Corben", cursive;
-  font-weight: 400;
+  font-weight: 550;
   font-size: x-large;
   color: #665352;
+}
+
+body {
+  background-color: rgba(144, 212, 224, 0.55);
 }
 
 .main-container {
@@ -26,6 +30,22 @@
   flex-wrap: no-wrap;
   align-items: stretch;
   justify-content: space-evenly;
+}
+.main-english-container {
+  text-align: center;
+}
+.main-english-container-textarea {
+  resize: none;
+  border: 2px solid #665352;
+  border-radius: 20px;
+}
+.main-morse-container {
+  text-align: center;
+}
+.main-morse-container-textarea {
+  resize: none;
+  border: 2px solid #665352;
+  border-radius: 20px;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -4,8 +4,36 @@
 
 @import "../components/heading.scss";
 
+body {
+    background-color: palette.$background-colour;
+}
+
 .main {
     &-container {
         @include layout.flex-mixin(row, no-wrap, stretch, space-evenly);
+    }
+
+    &-english-container {
+        text-align: center;
+        &-textarea {
+            resize: none;
+            @include layout.textarea-border(
+                2px,
+                solid,
+                palette.$heading-text-colour
+            );
+        }
+    }
+
+    &-morse-container {
+        text-align: center;
+        &-textarea {
+            resize: none;
+            @include layout.textarea-border(
+                2px,
+                solid,
+                palette.$heading-text-colour
+            );
+        }
     }
 }

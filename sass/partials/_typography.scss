@@ -7,7 +7,7 @@ $textarea-font: "Source Code Pro", monospace;
 @mixin heading-font($font-size) {
     text-align: center;
     font-family: $heading-font;
-    font-weight: 400;
+    font-weight: 550;
     font-size: $font-size;
     color: palette.$heading-text-colour;
 }

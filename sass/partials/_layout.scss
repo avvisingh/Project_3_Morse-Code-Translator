@@ -5,3 +5,8 @@
     align-items: $align;
     justify-content: $justify;
 }
+
+@mixin textarea-border($width, $style, $colour) {
+    border: $width $style $colour;
+    border-radius: 20px;
+}
