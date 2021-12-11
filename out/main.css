@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Corben&family=Source+Code+Pro:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Corben&family=Source+Code+Pro:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Corben&family=Source+Code+Pro:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Corben&family=Source+Code+Pro:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Corben&family=Source+Code+Pro:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Corben&family=Source+Code+Pro:wght@300;400&display=swap");
 .heading-container {
   text-align: center;
-  margin-bottom: 7.5%;
+  margin-bottom: 7%;
 }
 .heading-h1 {
   text-align: center;
@@ -35,6 +35,12 @@ body {
   text-align: center;
 }
 .main-english-container-textarea {
+  font-family: "Source Code Pro", monospace;
+  font-weight: 400;
+  font-size: medium;
+  color: #7d5f4f;
+  background-color: rgba(255, 232, 209, 0.5);
+  padding: 15px;
   resize: none;
   border: 2px solid #665352;
   border-radius: 20px;
@@ -43,6 +49,12 @@ body {
   text-align: center;
 }
 .main-morse-container-textarea {
+  font-family: "Source Code Pro", monospace;
+  font-weight: 400;
+  font-size: medium;
+  color: #7d5f4f;
+  background-color: rgba(255, 232, 209, 0.5);
+  padding: 15px;
   resize: none;
   border: 2px solid #665352;
   border-radius: 20px;

@@ -1,5 +1,5 @@
 @use "./palette";
-@import url("https://fonts.googleapis.com/css2?family=Corben&family=Source+Code+Pro:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Corben&family=Source+Code+Pro:wght@300;400&display=swap");
 
 $heading-font: "Corben", cursive;
 $textarea-font: "Source Code Pro", monospace;
@@ -13,9 +13,8 @@ $textarea-font: "Source Code Pro", monospace;
 }
 
 @mixin textarea-font {
-    text-align: center;
     font-family: $textarea-font;
-    font-weight: 300;
-    font-size: large;
+    font-weight: 400;
+    font-size: medium;
     color: palette.$textarea-text-colour;
 }
