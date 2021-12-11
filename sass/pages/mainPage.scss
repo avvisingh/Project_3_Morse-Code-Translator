@@ -1,1 +1,11 @@
+@use "../partials/layout";
+@use "../partials/palette";
+@use "../partials/typography";
+
 @import "../components/heading.scss";
+
+.main {
+    &-container {
+        @include layout.flex-mixin(row, no-wrap, stretch, space-evenly);
+    }
+}
